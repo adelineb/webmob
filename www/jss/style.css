@@ -1,0 +1,116 @@
+body{
+	font-family: arial;
+	font-size : 1.2em;
+	color : #333;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	background: #aaa url("../img/bg-maison.png");
+	background-repeat: repeat-x;	
+}
+
+a{
+	text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    display:block;
+    position: static;
+}
+
+/* En tete */
+#header {
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+}
+
+#header img {
+    float: left;
+}
+
+#header .titre {
+	float:left;
+}
+
+#header h1 {
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+#header h2{
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+#menu{
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#menu ul{
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+#menu li{
+	display: block;
+	width: 25%;
+	background-color: #333;
+	float: left;
+}
+
+#menu li:hover{
+	background-color: red;
+}
+
+#menu li a {
+    color: #fff;
+}
+
+#footer{
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#footer ul{
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+#footer li{
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+#footer li:hover{
+	background-color: red;	
+
+}
+
+#footer a:hover {
+	color: black;
+}
+
+#footer li a {
+    color: #fff;
+}
+
+.wrapperf {
+    width: 100%;
+    display:block;
+    position: fixed;
+    bottom: 0;
+}
