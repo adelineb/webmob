@@ -1,8 +1,9 @@
 <html>
 <head>
-<link rel="stylesheet" href="jss/style.css" type="text/css">
-<link rel="shortcut icon" href="img/favicon.ico">
-<title></title>
+	<meta charset="utf-8"/>
+	<title>Bienvenue sur MyBd.fr</title>
+	<link rel="stylesheet" href="jss/style.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
 	<div class="wrapper">

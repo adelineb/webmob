@@ -1,8 +1,11 @@
-<html>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" href="jss/style.css" type="text/css">
-<link rel="shortcut icon" href="img/favicon.ico">
-<title></title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Adeline BARRÉ" lang="fr" xml:lang="fr" />
+	<link href="jss/style.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />  
+	<title>Bienvenue sur MyBd.fr</title>
 </head>
 <body>
 	<div class="wrapper">

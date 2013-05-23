@@ -5,8 +5,8 @@ body{
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
-	background: #aaa url("../img/bg-maison.png");
-	background-repeat: repeat-x;	
+	background: #aaa url("../img/bg-maison.png") repeat-x;
+	/*background-repeat: repeat-x;*/	
 }
 
 a{
@@ -15,6 +15,9 @@ a{
 
 .clear {
     clear: both;
+    line-height: 0;
+    font-size: 1px;
+    color: transparent;
 }
 
 .wrapper {
@@ -24,30 +27,71 @@ a{
 }
 
 /* En tete */
-#header {
+header {
     display: block;
     width: 980px;
     margin: 0 auto;
 }
 
-#header img {
+header img {
     float: left;
+    margin-right: 10;
+    transform:rotate(30deg);
+	-ms-transform:rotate(30deg); /* IE 9 */
+	-webkit-transform:rotate(30deg); /* Safari and Chrome */
 }
 
-#header .titre {
+header .titre {
 	float:left;
+	margin-top: 10;
 }
 
-#header h1 {
-    color: blue;
+header h1 {
+    /*color: blue;*/
     margin: 0;
     padding: 0;
+    animation: monanim 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation: monanim 2s; /* Safari and Chrome */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
 }
 
-#header h2{
+@keyframes monanim
+{
+from {color:red;}
+to {color:blue;}
+}
+
+@-webkit-keyframes monanim /* Safari and Chrome */
+{
+from {color:red;}
+to {color:blue;}
+}
+
+header h2{
     color: red;
     margin: 0;
     padding: 0;
+    animation: monanim2 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation: monanim2 2s; /* Safari and Chrome */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes monanim2
+{
+from {color:blue;}
+to {color:red;}
+}
+
+@-webkit-keyframes monanim2 /* Safari and Chrome */
+{
+from {color:blue;}
+to {color:red;}
 }
 
 #menu{
@@ -70,47 +114,66 @@ a{
 }
 
 #menu li:hover{
-	background-color: red;
+	/*background-color: red;*/
+    transform:rotate(5deg);
+	-ms-transform:rotate(5deg); /* IE 9 */
+	-webkit-transform:rotate(5deg); /* Safari and Chrome */
+    text-shadow: 5px 5px 5px #fff;
 }
 
 #menu li a {
     color: #fff;
+    text-shadow: 5px 5px 5px #fff;
 }
 
-#footer{
-	display: block;
-	width: 980px;
-	margin: 0 auto;
+.form label {
+    display: block;
+    float: left;
+    width:250px;
+    text-align: right;
 }
 
-#footer ul{
-	display: block;
-	width: 100%;
-	list-style-type: none;
-}
-
-#footer li{
-	display: block;
-	width: 25%;
+.form input {
 	float: left;
+    width:250px;
+    margin-left: 20px;
 }
 
-#footer li:hover{
-	background-color: red;	
-
-}
-
-#footer a:hover {
-	color: black;
-}
-
-#footer li a {
-    color: #fff;
-}
-
-.wrapperf {
+footer  {
     width: 100%;
     display:block;
     position: fixed;
     bottom: 0;
 }
+footer nav{
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+footer ul{
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+
+footer li{
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+footer li:hover{
+	background-color: red;	
+
+}
+
+footer a:hover {
+	color: black;
+}
+
+footer li a {
+    color: #fff;
+}
+
+

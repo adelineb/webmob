@@ -1,56 +1,60 @@
-<html>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" href="jss/style.css" type="text/css">
-<link rel="shortcut icon" href="img/favicon.ico">
-<title></title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Adeline BARRÉ" lang="fr" xml:lang="fr" />
+	<link href="jss/style.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />  
+	<title>Bienvenue sur MyBd.fr</title>
+    <script lang="javascript" type="text/javascript" src="jss/stockage.js"> </script>
 </head>
 <body>
-	<div class="wrapper">
-		<a href="index.php" id="header"> <img src="img/logo-72.png">
-			<div class="titre">
+	<header>
+		<a href="index.php"> <img src="img/logo-72.png">
+			<hgroup>
 				<h1>MyBd.fr</h1>
 				<h2>plein d'infos sur les BD</h2>
-			</div>
+			</hgroup>
 		</a>
-	</div>
+	</header>
 	<br class="clear" />
 
 	<div class="wrapper">
-		<div id="menu">
+		<nav id="menu">
 			<ul>
 				<li><a href="search.php">Recherche de BD</a>
 				<li><a href="last.php">Les derni&egrave;res BD</a>
 				<li><a href="random.php">Au hasard</a>
 				<li><a href="legal.php">Info l&eacute;gal</a>
 			</ul>
-		</div>
+		</nav>
 	</div>
-	<br class="clear" />
+	<br class="clear"/>
 
 
-	<div id="toto" class="wrapper">
-		<form method="POST" action="index.php">
-			Auteur : <input type="text" name="auteur"><br>
-			Nationalit&eacute; : <input type="text" name="nationalite"><br>
-			Titre : <input type="text" name="titre"><br>
-			Ann&eacute;e : <input type="text" name="annee"><br>
-			Prix : <input type="text" name="prix"><br>
-			Disponibilit&eacute; : <input type="text" name="disponibilite"><br>
-			<br>
+	<section>
+	<br class="clear"/>
+		<form method="get" class="form" action="index.php">
+			<label for="auteur">Auteur </label><input type="text" name="auteur"><br>
+			<label for="nationalite">Nationalit&eacute; </label><input type="text" name="nationalite"><br>
+			<label for="titre">Titre </label><input type="text" name="titre"><br>
+			<label for="annee">Ann&eacute;e </label><input type="range" name="annee" min="1900" max="2013"><br>
+			<label for="prix">Prix </label><input type="text" name="prix"><br>
+			<label for="disponibilite">Disponibilit&eacute; </label><input type="text" name="disponibilite"><br>
+			<br class="clear"/>
 			<input type="submit" value="Recherche">
 		</form>
-	</div>
-	
+	</section>
 		
-	<div class="wrapperf">
-		<div id="footer">
+	<footer>
+		<nav>
 			<ul>
 				<li><a href="search.php">Recherche de BD</a>
 				<li><a href="last.php">Les derni&egrave;res BD</a>
 				<li><a href="random.php">Au hasard</a>
 				<li><a href="legal.php">Info l&eacute;gal</a>
 			</ul>
-		</div>
-	</div>
-</body>
+		</nav>
+	</footer>
+	</body>
 </html>

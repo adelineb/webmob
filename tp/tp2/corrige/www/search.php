@@ -96,7 +96,7 @@
                             </div>
                             <div>
                                 <label for="annee">Ann&eacute;e</label>
-                                <input id="annee" type="range" name="annee" min="1900" max="2013"  onchange="memoriser()"/>
+                                <input id="annee" type="range" name="annee" min="1900" max="2013"/>
                             </div>
                         </div>
                         <div class="column">
