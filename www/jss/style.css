@@ -94,6 +94,10 @@ from {color:blue;}
 to {color:red;}
 }
 
+video{
+	margin-left: 50px;
+}
+
 #menu{
 	display: block;
 	width: 980px;

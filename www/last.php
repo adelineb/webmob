@@ -8,38 +8,43 @@
 	<title>Bienvenue sur MyBd.fr</title>
 </head>
 <body>
-	<div class="wrapper">
-		<a href="index.php" id="header"> <img src="img/logo-72.png">
-			<div class="titre">
+	<header>
+		<a href="index.php"> <img src="img/logo-72.png">
+			<hgroup>
 				<h1>MyBd.fr</h1>
 				<h2>plein d'infos sur les BD</h2>
-			</div>
+			</hgroup>
 		</a>
-	</div>
+	</header>
 	<br class="clear" />
 
 	<div class="wrapper">
-		<div id="menu">
+		<nav id="menu">
 			<ul>
 				<li><a href="search.php">Recherche de BD</a>
 				<li><a href="last.php">Les derni&egrave;res BD</a>
 				<li><a href="random.php">Au hasard</a>
 				<li><a href="legal.php">Info l&eacute;gal</a>
 			</ul>
-		</div>
+		</nav>
 	</div>
-	<br class="clear" />
+    <br class="clear"/>
 
-
-	<div class="wrapperf">
-		<div id="footer">
+    <section>
+        <article>
+        </article>
+    </section>
+    <br class="clear"/>
+	
+	<footer>
+		<nav>
 			<ul>
 				<li><a href="search.php">Recherche de BD</a>
 				<li><a href="last.php">Les derni&egrave;res BD</a>
 				<li><a href="random.php">Au hasard</a>
 				<li><a href="legal.php">Info l&eacute;gal</a>
 			</ul>
-		</div>
-	</div>
+		</nav>
+	</footer>
 </body>
 </html>

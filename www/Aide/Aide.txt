@@ -1,0 +1,36 @@
+var V = new function(){
+
+var _this = this;
+this.v2 = "toto";
+
+function f1(){
+
+}
+
+this.f2 = function(){
+_this.v2 = "titi";
+alert(_this.v2);
+};
+
+var V_V1 = new function(){
+
+this.F1 = function(){
+
+}
+}
+
+
+
+
+}
+
+monButton.onclick = function(){
+alert(this.title)
+}
+
+monButton.onclick = V.F2;
+
+monButton.onclick = function(){
+var valeur = document.getElementById("mm").value;
+V.F2(valeur);
+} 

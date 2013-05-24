@@ -6,7 +6,7 @@
 	<link href="jss/style.css" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="img/favicon.ico" />  
 	<title>Bienvenue sur MyBd.fr</title>
-    <script lang="javascript" type="text/javascript" src="jss/stockage.js"> </script>
+    <script lang="javascript" type="text/javascript" src="jss/library.js"> </script>
 </head>
 <body>
 	<header>
@@ -34,15 +34,15 @@
 
 	<section>
 	<br class="clear"/>
-		<form method="get" class="form" action="index.php">
+		<form method="get" class="form" action="index.php" name="rech">
 			<label for="auteur">Auteur </label><input type="text" name="auteur"><br>
 			<label for="nationalite">Nationalit&eacute; </label><input type="text" name="nationalite"><br>
 			<label for="titre">Titre </label><input type="text" name="titre"><br>
-			<label for="annee">Ann&eacute;e </label><input type="range" name="annee" min="1900" max="2013"><br>
+			<label for="annee">Ann&eacute;e </label><input id="valeur" type="range" name="annee" min="1900" max="2013" onChange="updateValue()"><span id="mavaleur"></span><br>
 			<label for="prix">Prix </label><input type="text" name="prix"><br>
 			<label for="disponibilite">Disponibilit&eacute; </label><input type="text" name="disponibilite"><br>
 			<br class="clear"/>
-			<input type="submit" value="Recherche">
+			<input type="button" value="Recherche" onclick="recordFormSearch()">
 		</form>
 	</section>
 		
