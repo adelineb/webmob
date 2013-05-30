@@ -1,0 +1,25 @@
+input[type="button"] {
+	width: 60px;
+}
+
+#curseur {
+	top: 0px;
+	left:0px;
+	position:absolute;
+}
+
+img {
+	width:25px;
+	height: 25px;
+	margin: 10px;	
+}
+
+#panel {
+	height:150px;
+}
+
+#menuGauche {
+	width:50px;
+	height: 100px;
+	border: 1px solid red;
+}

@@ -22,6 +22,8 @@ $(document).ready(function(){
 	$(".charger").click(function(){	
 		$("#vue").load($(this).data("vue"));	
 	});
+	
+
 });
 
 function effacer(){
