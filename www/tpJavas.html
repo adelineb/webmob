@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="jss/tpJavas.js" type="text/javascript"></script>
+</head>
+<body id="thebody">
+<h1>titre de ma page</h1>
+<div style="float:left; margin:10px">
+	<table border="1" id="monTableau">
+	 	<tr>
+			<td>Pays</td>
+			<td>Frais</td>
+		</tr>
+	<!--	
+	<script language="javascript">
+			document.write(tableau);
+		</script>-->
+	</table>
+</div>
+
+<div  >
+	<table id="monTableau2">
+	 	<tr>
+			<td>Pays</td>
+			<td>Frais</td>
+		</tr>
+	<!--	
+	<script language="javascript">
+			document.write(tableau);
+		</script>-->
+	</table>
+</div>
+<div style="clear: both">
+	<select  id="selection" >
+		<!--  <script language="javascript">
+			document.write(select);
+		</script>-->	
+	</select>
+</div>
+</br>
+<input id="inc" type="text"/><input type="button" value="lancer" onclick="lancer()"/>
+<h1 id="decompte"></h1>
+<input id="ht" type="text" />
+<input id="taux" type="text"/>
+<input id="ttc" type="button" value="TTC"></input>
+
+<!-- Conteneur pour pdf -->
+<div id="pdf">
+<input id="cherchePDF" type="button" value="Chercher Pdf"/>
+<p id="resultat"></p>
+</div>
+
+<!--  TP page 66 -->
+<textarea cols="50" rows="10" id="textesource" style="float:left"></textarea>
+<p id="textedestination">
+</p>
+<div style="clear: both">
+	<input type="button" value="gras" id="gras"/>
+	<input type="button" value="Italique" id="italique"/>
+</div>
+</body>
+</html>

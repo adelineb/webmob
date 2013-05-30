@@ -1,0 +1,15 @@
+li {
+	width: 50px;	
+}
+
+div {
+	float:left;
+}
+
+.clear {
+	clear: both;
+}
+
+#conteneur {
+	height: 200px
+}

@@ -32,12 +32,14 @@ function Set(cle, valeur) {
 		localStorage.setItem(cle, valeur)
 }
 
-function Get(cle) {
+function Get(cle) {	
+	
 	if (localStorage)
 		localStorage.getItem(cle)
 }
 
 function clear(){
+	
 	if (localStorage)
 		localStorage.clear;	
 }
