@@ -15,7 +15,6 @@ $(document).ready(function(){
 		event.stopPropagation();
 	})
 	
-	
 	$("#chope img").click(function(event){
 		switch (mode){
 		case "copier":
@@ -52,7 +51,7 @@ $(document).ready(function(){
 		}
 	})
 	
-	$("#chope img").dblclick(supprimer);
+	$("#chope img").dblclick(supprimer);	
 	
 	$("#angle").hide();
 	

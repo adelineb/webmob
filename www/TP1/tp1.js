@@ -50,6 +50,10 @@ $(document).ready(function(){
 	})
 	
 	
+	$("#ok").click(function(){
+		var test=$("#motpasse").serialize();
+	});
+	
 	// Excercice 3
 	$("#start").click(function(){
 		if (start) {
